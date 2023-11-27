@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 type IPizza interface {
 	getPrice() int
 }
@@ -31,7 +27,8 @@ func (c *CheeseTopping) getPrice() int {
 	pizzaPrice := c.pizza.getPrice()
 	return pizzaPrice + 10
 }
-func main() {
+
+/*func main() {
 
 	pizza := &VeggieMania{}
 
@@ -47,3 +44,4 @@ func main() {
 
 	fmt.Printf("Price of veggeMania with tomato and cheese topping is %d\n", pizzaWithCheeseAndTomato.getPrice())
 }
+*/

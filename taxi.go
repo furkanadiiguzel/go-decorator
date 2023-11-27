@@ -1,4 +1,4 @@
-package taxi
+package main
 
 type ITaxi interface {
 	getPrice() int
@@ -16,6 +16,7 @@ type LongTaxiTrip struct {
 
 func (c *LongTaxiTrip) getPrice() int {
 	taxiPrice := c.taxi.getPrice()
+
 	return taxiPrice - 10
 }
 
